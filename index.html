@@ -6,6 +6,13 @@
     <title>AIS Talent Search</title>
 </head>
 <body>
-    <h1>First Commit</h1>
+    <h1>AIS Talent Search</h1>
+    
+    <script>
+        fetch('/api/students')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+    </script>
 </body>
 </html>
